@@ -37,6 +37,14 @@ ul{
 .indent{
     margin-top:126px;
 }
+
+.hide{
+    display: none;
+}
+
+.rotate{
+    transform: rotate(45deg);
+}
 /* header */
 
 header{
@@ -301,6 +309,11 @@ header{
 
 .faq-point{
     display: flex;
+    flex-direction: column;
+}
+
+.faq-wrapper{
+    display: flex;
     justify-content: space-between;
     align-items: center;
 }
@@ -315,6 +328,7 @@ header{
     height: 24px;
     float:right;
     margin: 24px 0;
+    transition: .4s;
 }
 
 
@@ -382,6 +396,17 @@ header{
     text-decoration: underline;
 }
 
+.desc{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: -0.5px;
+    color: #DBD9D9;
+    opacity: 0.8;
+    margin: 24px 0px;
+}
+
 @media(max-width: 960px){
     .default-container{
         padding: 0 4%; 
@@ -439,6 +464,7 @@ header{
     .plus{
         width: 18px;
         height: auto;
+        cursor: pointer;
     }
 
     .footer-nav ul>li{
@@ -493,8 +519,8 @@ header{
     }
 
     .circle{
-        width: 502px;
-        height: 502px;
+        width: 398px;
+        height: 398px;
         justify-self: center;
     }
 
@@ -527,16 +553,22 @@ header{
 
     .heart-block2{
         margin-top: 32px;
-        flex-wrap: wrap;
-        flex-direction: row;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        justify-items: stretch;
+        align-items: stretch;
+
     }
+
+    
 
     .card-heart{
         width:294px;
     }
 
     .btn{
-        width: 592px;
+        width: 100%;
         margin-bottom: 32px;
         margin-right: 0;
     }
@@ -567,8 +599,8 @@ header{
 
     .circle{
         padding-left: 0;
-        width: 335px;
-        height: 335px;
+        width: 364px;
+        height: 364px;
         margin-left: 0;
         margin-bottom: 24px;
     }
@@ -590,23 +622,18 @@ header{
         width: 213px;
         margin-bottom: 32px;
     }
-    
-    .heart-block2 {
-    justify-content: center;
+
+    .card-heart {
+        width: 181px;
     }
-    
 
     .heart-block1>p {
         width: 306px;
     }
 
-    .btn{
-        width: 100%;
-        text-align: center;
-    }
 
     .faq h1 {
-        width: 250px;
+        width: 100%;
     }
 
 }
