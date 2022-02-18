@@ -590,10 +590,11 @@ header{
         width: 213px;
         margin-bottom: 32px;
     }
-
-    .card-heart {
-        width: 181px;
+    
+    .heart-block2 {
+    justify-content: center;
     }
+    
 
     .heart-block1>p {
         width: 306px;
