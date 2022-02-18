@@ -1,5 +1,7 @@
 # KazanExpress Test Task
 
+## [Ссылка на сайт](https://ritaholod.github.io/)
+
 ## Что сделано?
 
 Адаптивный лендинг для KazanExpress на основе макета в Figma.
@@ -12,7 +14,11 @@
 
 Добавлены анимации. Сделаны с помощью keyframes
 
+Добавлен аккардеон с помощью JavaScript , с использованием цикла for.
+
 ### Технологии:
 HTML
 
 CSS
+
+JS
