@@ -198,8 +198,8 @@ header{
     
 }
 .point-lbl>p{
-    display: inline;
-    font-size: 15px;
+    display: inline-block;
+    font-size: 14px;
     margin-left: 15px;
 }
 
@@ -407,13 +407,59 @@ header{
     margin: 24px 0px;
 }
 
-@media(max-width: 960px){
+@media(max-width: 1280px){
     .default-container{
         padding: 0 4%; 
     }
 
+    .Ellipse{
+        top: -64px;
+    }
+    
+    .Ellipse1{
+        top: -100px; 
+    }
+    
+    .Ellipse2{
+        top: -170px;
+    }
+    
+    .Ellipse3{
+        top: -233px;
+    }
+
+    .heart-block1>p{
+        font-size: 23px;
+        width: 400px;
+    }
+
+    
+}
+
+@media(max-width: 1094px){
+    .Ellipse{
+        top: -93px;
+    }
+    
+    .Ellipse1{
+        top: -123px; 
+    }
+    
+    .Ellipse2{
+        top: -206px;
+    }
+    
+    .Ellipse3{
+        top: -266px;
+    }
+    .heart-img {
+        width: 361px;
+    }
+}
+
+@media(max-width: 960px){
     .title{
-        font-size: 50px;
+        font-size: 2.9em;
     }
 
     .cards-main{
@@ -442,23 +488,6 @@ header{
 
     .Ellipse, .Ellipse1, .Ellipse2, .Ellipse3{
         display: none;
-    }
-    .heart-block{
-        display: grid;
-        grid-template-columns: repeat(2,auto);
-    }
-
-    .heart-block1>p{
-        font-size: 23px;
-        width: 400px;
-    }
-
-    .heart-img {
-        width: 406px;
-    }
-
-    .faq h1{
-        width: 600px;
     }
 
     .plus{
@@ -496,10 +525,86 @@ header{
     }
 }
 
+@media(max-width:895px){
+    .card-main>p:first-child {
+        font-size: 25px;
+    }
+
+    .card-main>p:last-child {
+        font-size: 20px;
+    }
+}
+
+@media(max-width:872px){
+    .heart-img {
+        width: 300px;
+    }
+
+    .heart-block1>p {
+        width:350px;
+        font-size: 18px;
+        
+    }
+    .title {
+        font-size: 2.5em;
+    }
+}
+
+@media(max-width:818px){
+    .title {
+        line-height: 1.5;
+}
+
+    .point-lbl>p {
+        font-size: 13px;
+    }
+    
+}
+
+@media(max-width:719px){
+    .heart-img {
+        width: 228px;
+    }
+    .heart-block1{
+        margin-bottom: 30px;
+    }
+    .point-lbl>p {
+        font-size: 11px;
+    }
+
+    .circle {
+        width: 247px;
+        height: 247px;
+    }
+    .graphic-block1>h1:first-child{
+        font-size: 35px;
+    }
+    .heart-block2{
+        margin-top: 32px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        justify-items: stretch;
+        align-items: stretch;
+    }
+
+    .card-heart{
+        width:100%;
+    }
+
+    .circle span:first-child {
+        font-size: 65px;
+        margin-top: 68px;
+    }
+}
+
 @media(max-width:640px){
     .title{
-        font-size: 47px;
         line-height: 55px;
+    }
+
+    .graphic-block1>h1:first-child{
+        font-size: 2.5em;
     }
 
     .cards-main{
@@ -508,6 +613,14 @@ header{
 
     .card-main>img{
         margin: 5px 37px 49px 140px;
+    }
+
+    .card-main>p:first-child {
+        font-size: 13px;
+        }
+
+    .card-main>p:last-child {
+        font-size: 15px;
     }
 
     .about-marketplace{
@@ -519,14 +632,16 @@ header{
     }
 
     .circle{
-        width: 398px;
-        height: 398px;
+        width: 382px;
+        height: 382px;
         justify-self: center;
+        margin-bottom: 20px;
+
     }
 
     .circle span:first-child{
         font-size: 124px;
-        margin-top: 140px;
+        margin-top: 107px;
     }
 
     .graphic-sec {
@@ -541,30 +656,8 @@ header{
         margin-top:126px;
     }
 
-    .heart-block1>p {
-        width:350px;
-        font-size: 18px;
-        
-    }
-
     .heart-img {
         display: none;
-    }
-
-    .heart-block2{
-        margin-top: 32px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        justify-items: stretch;
-        align-items: stretch;
-
-    }
-
-    
-
-    .card-heart{
-        width:294px;
     }
 
     .btn{
@@ -592,40 +685,42 @@ header{
 
 @media(max-width:414px){
     .title {
-        font-size: 25px;
-        line-height: 33px;
-        width: 270px;
+        font-size: 1.9em;
+        line-height: 1.3em;
+        width: 100;
+    }
+
+    .graphic-block1>h1:first-child{
+        font-size: 1.9em;
     }
 
     .circle{
         padding-left: 0;
-        width: 364px;
-        height: 364px;
+        width: 294px;
+        height: 294px;
         margin-left: 0;
         margin-bottom: 24px;
     }
 
     .circle span:first-child{
         font-size: 88px;
-        margin-top: 111px;
+        margin-top: 80px;
     }
 
-    .graphic-block1 .title{
+    /* .graphic-block1 .title{
         width: 285px;
-    }
+    } */
 
     .heart-block1 {
         margin-top: 90px;
     }
 
-    .heart-block1 .title{
+    /* .heart-block1 .title{
         width: 213px;
         margin-bottom: 32px;
-    }
+    } */
 
-    .card-heart {
-        width: 181px;
-    }
+    
 
     .heart-block1>p {
         width: 306px;
@@ -639,6 +734,10 @@ header{
 }
 
 @media(max-width:320px){
+
+    .title {
+        font-size: 1.4em;
+    }
     .circle{
         width: 296px;
         height: 296px;
