@@ -1,6 +1,6 @@
 # KazanExpress Test Task
 
-## [Ссылка на сайт]((https://ritaholod.github.io/](https://ritaholod.github.io/KazanExpress/))
+## [Ссылка на сайт](https://ritaholod.github.io/](https://ritaholod.github.io/KazanExpress/)
 
 ## Что сделано?
 
